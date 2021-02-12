@@ -1,3 +1,58 @@
+<div align="center">
+
+# Tap Room Project
+
+</div>
+
+<div align="center">
+<img src="https://github.com/HarrisonStrand.png" width="200px" height="auto" >
+</div>
+<h3 align="center">Tap Room Project, 2-12-2021</h3>
+<h4 align="center"> By Harrison Strand</h4>
+
+## Description
+
+This project was designed as a tap room keg and product manager using React, Javascript, CSS, Bootstrap, with state components and CRUD functionality. Users are able to create, update and manage stock for kegs and tap room merchandise using a one page web application 
+
+## User Stories
+
+<details>
+  <summary>Expand</summary>
+
+| ID   | User Story                                                                                            | Accepted |
+| ---- | ----------------------------------------------------------------------------------------------------- | -------- |
+| US01 | "As a user, I want to see a list/menu of all available kegs. For each keg, I want to see its name, brand, price, pints left, and ABV."                       | True     |
+| US02 | "As a user, I want to submit a form to add a new keg to a list."                                  | True     |
+| US03 | "As a user, I want to be able to click on a keg to see its detail page."                                           | True     |
+| US04 | "As a user, I want the option to edit a keg's properties after entering them just in case I make a mistake."                                           | True     |
+| US05 | "As a user, I want to be able to delete a keg."                                           | True     |
+| US06 | "As a user, I want a keg to update to say "Out of Stock" once it's empty."                                           | True     |
+| US07 | "As a user, I want kegs with less than 10 pints to include a message that says "Almost Empty" so I can try a pint before it's gone!"                                           | True     |
+| US08 | "As a user, I want to have kegs prices to be color-coded for easy readability."                                           | True     |
+| US09 | "As a user, I want to see how many pints are left in a keg." | True     |
+| US10 | "As a user, I want to be able to click a button next to a keg whenever I sell a pint of it. This should decrease the number of pints left by 1. Pints should not be able to go below 0."                  | True     |
+
+</details>
+
+
+## State Component Diagram
+
+<img src="./src/img/TapRoomDiagram.jpg"  >
+
+## Setup/Installation Requirements
+
+##### Software Requirements
+
+1. Internet browser
+2. A code editor such as VSCode to view and edit the code
+
+##### Open Locally
+
+- Click on the link to my repository: [My Repository]()
+- Click on the green "Code" button and copy the repository URL
+- Open your terminal and use the command `git clone ` into the directory you would like to clone the repository
+- Open in text editor to view code and make changes
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -41,6 +96,9 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Learn More
 
+<details>
+  <summary>Expand</summary>
+
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
@@ -68,3 +126,36 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+</details>
+
+
+## Known Bugs
+
+No known bugs...
+
+## Support and Contact Details
+
+If any errors or bugs occur with installation, please email me, <harrisonstrand@gmail.com>.
+
+## Technologies Used
+
+- VSCode
+- Node
+- React
+- CSS
+- Javascript
+- npm package installer
+
+### License
+
+This software is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
+
+Copyright (c) 2021 Harrison Strand<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Q_3EVY7j95tTyemJwWxMR7jwvUK7gPe0_w&usqp=CAU" width="2%" height="auto">
+
+
+
+
+
+
+
