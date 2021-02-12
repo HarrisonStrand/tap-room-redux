@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function KegDetail(props) {
 
-	const { keg, onClickingDelete } = props;
+	const { keg, onClickingDelete, onClickingPurchase } = props;
 
 	return (
 		<>
@@ -14,6 +14,7 @@ function KegDetail(props) {
 			<p>${keg.price}</p>
 			<p>ABV: {keg.ABV}%</p>
 			<p>Pints Remaining: {keg.pints}/124</p>
+			<button onClick={()=> onClickingPurchase() }>Purchase</button>
 			<button onClick={ props.onClickingEdit }>Update Keg</button>
 			<button onClick={()=> onClickingDelete(keg.id) }>Delete</button>
 		</>
@@ -24,6 +25,7 @@ KegDetail.propTypes = {
 	keg: PropTypes.object,
 	onClickingDelete: PropTypes.func,
 	onClickingEdit: PropTypes.func,
+	onClickingPurchase: PropTypes.func
 }
 
 export default KegDetail;
