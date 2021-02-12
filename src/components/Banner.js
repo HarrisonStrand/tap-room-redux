@@ -1,10 +1,16 @@
 import React from "react";
-import beerbanner from './../img/beerbanner.jpg';
 
 function Banner(){
+
+  const bannerStyles = {
+    fontFamily: 'sans-serif',
+    paddingTop: '50px'
+  }
+
   return (
     <>
-      <img src={beerbanner} alt="An image of a logo" />
+    <h1 style= {bannerStyles}>Refuge de Pierre</h1>
+    <hr />
 		</>
   );
 }
