@@ -3,14 +3,21 @@ import React from "react";
 function Banner(){
 
   const bannerStyles = {
-    fontFamily: 'sans-serif',
-    paddingTop: '50px'
+    backgroundColor: '#026873',
+    width: '250px',
+    height: '250px',
+    borderRadius: '50%',
+    marginLeft: '1500px',
+    marginTop: '30px',
+    position: 'inherit'
   }
 
   return (
     <>
-    <h1 style= {bannerStyles}>Refuge de Pierre</h1>
-    <hr />
+    <div className='container'>
+    <div style= {bannerStyles} className='circle'></div>
+    </div>
+    <h1 >Refuge de Pierre</h1>
 		</>
   );
 }
