@@ -15,14 +15,18 @@ function ReusableKegForm(props) {
 					placeholder='Brand'/>
 				<input
 					type='number'
+					min='0'
 					name='price'
 					placeholder='Price'/>
 				<input
 					type='number'
+					min='0'
 					name='ABV'
 					placeholder='ABV%'/>
 				<input
 					type='number'
+					min='0'
+					max='124'
 					name='pints'
 					placeholder='Pints'/>
 				<button type='submit'>{props.buttonText}</button>
