@@ -60,8 +60,7 @@ class KegControl extends React.Component {
 
 	handlePurchasingKegPintInList = () => {
 		const selectedKeg = this.state.selectedKeg;
-		let outOfStock = "";
-		if (selectedKeg.pints > 0) {
+		if (selectedKeg.pints > 11) {
 			const newQuantity = Object.assign({}, selectedKeg, {pints: selectedKeg.pints - 1});
 			const newKegList = this.state.masterKegList
 				.filter(keg => keg.id !== this.state.selectedKeg.id)
@@ -70,9 +69,17 @@ class KegControl extends React.Component {
 					masterKegList: newKegList,
 					selectedKeg: newQuantity
 				});
+		} else if (selectedKeg.pints > 0 && selectedKeg.pints <= 11) {
+			const newQuantity = Object.assign({}, selectedKeg, {pints: selectedKeg.pints - 1}, {stock: selectedKeg.stock = "Almost Empty!"});
+			const newKegList = this.state.masterKegList
+				.filter(keg => keg.id !== this.state.selectedKeg.id)
+				.concat(newQuantity);
+				this.setState({
+					masterKegList: newKegList,
+					selectedKeg: newQuantity
+				});
 		} else {
-			const newQuantity = Object.assign({}, selectedKeg, {pints: selectedKeg.pints});
-			outOfStock = "Out Of Stock!"
+			const newQuantity = Object.assign({}, selectedKeg, {stock: selectedKeg.stock = "Out Of Stock!"});
 			const newKegList = this.state.masterKegList
 				.filter(keg => keg.id !== this.state.selectedKeg.id)
 				.concat(newQuantity);
