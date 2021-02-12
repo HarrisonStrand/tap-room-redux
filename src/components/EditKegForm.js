@@ -31,3 +31,5 @@ EditKegForm.propTypes = {
 	keg: PropTypes.object,
 	onEditKeg: PropTypes.func
 }
+
+export default EditKegForm;
