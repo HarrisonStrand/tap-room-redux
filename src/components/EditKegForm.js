@@ -18,11 +18,17 @@ function EditKegForm (props) {
 		});
 	}
 
-	return (
-		<>
+  const editFormStyles = {
+    color: '#E4E4E4'
+  }
+
+  return (
+    <>
+    <div className='editform' style={editFormStyles}>
 			<ReusableKegForm
 			formSubmissionHandler = {handleEditKegFormSubmission}
 			buttonText = 'Update Keg' />
+		</div>
 		</>
 	);
 }

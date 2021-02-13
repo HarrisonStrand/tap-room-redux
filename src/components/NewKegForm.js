@@ -17,11 +17,17 @@ function NewKegForm(props) {
 		})
 	}
 
+  const newFormStyles = {
+    color: '#E4E4E4'
+  }
+
   return (
     <>
+    <div className='newform' style={newFormStyles}>
 			<ReusableKegForm
 				formSubmissionHandler = {handleNewKegFormSubmission}
 				buttonText = 'Add Keg'/>
+		</div>
     </>
   );
 }

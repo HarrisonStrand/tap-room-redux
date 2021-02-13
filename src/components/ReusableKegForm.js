@@ -2,35 +2,45 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function ReusableKegForm(props) {
-	return (
-		<>
+  const FormStyles = {
+    color: '#E4E4E4'
+  }
+
+  return (
+    <>
+    <div className='form' style={FormStyles}>
 			<form onSubmit={props.formSubmissionHandler}>
 				<input
 					type='text'
 					name='name'
 					placeholder='Name'/>
+					<br></br>
 				<input
 					type='text'
 					name='brand'
 					placeholder='Brand'/>
+					<br></br>
 				<input
 					type='number'
 					min='0'
 					name='price'
 					placeholder='Price'/>
+					<br></br>
 				<input
 					type='number'
 					min='0'
 					name='ABV'
 					placeholder='ABV%'/>
+					<br></br>
 				<input
 					type='number'
 					min='0'
-					max='124'
 					name='pints'
 					placeholder='Pints'/>
-				<button type='submit'>{props.buttonText}</button>
+					<br></br>
+				<button className='btn btn-info'type='submit'>{props.buttonText}</button>
 			</form>
+		</div>
 		</>
 	);
 }

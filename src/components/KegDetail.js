@@ -5,8 +5,13 @@ function KegDetail(props) {
 
 	const { keg, onClickingDelete, onClickingPurchase } = props;
 
-	return (
-		<>
+  const detailStyles = {
+    color: '#E4E4E4'
+  }
+
+  return (
+    <>
+    <div className='detail' style={detailStyles}>
 			<h1>Keg Details</h1>
 			<hr />
 			<p>Name: {keg.name}</p>
@@ -15,9 +20,10 @@ function KegDetail(props) {
 			<p>ABV: {keg.ABV}%</p>
 			<p>Pints Remaining: {keg.pints}/124</p>
 			<p>{keg.stock}</p>
-			<button onClick={()=> onClickingPurchase() }>Purchase</button>
-			<button onClick={ props.onClickingEdit }>Update Keg</button>
-			<button onClick={()=> onClickingDelete(keg.id) }>Delete</button>
+			<button className='btn btn-info' onClick={()=> onClickingPurchase() }>Purchase</button>
+			<button className='btn btn-info' onClick={ props.onClickingEdit }>Update Keg</button>
+			<button className='btn btn-info' onClick={()=> onClickingDelete(keg.id) }>Delete</button>
+		</div>
 		</>
 	);
 }

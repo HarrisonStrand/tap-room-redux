@@ -1,17 +1,19 @@
 import React from "react";
-import RefugeDePierre from '../img/RefugeDePierre.png';
 
 function Banner(){
 
-  // const bannerStyles = {
-  //   marginLeft: '1500px',
-  //   marginTop: '30px',
-  //   position: 'inherit'
-  // }
+  const bannerStyles = {
+    color: '#E4E4E4',
+    marginLeft: '200px',
+    marginTop: '50px'
+  }
 
   return (
     <>
-    <img src={RefugeDePierre} alt="An image of a logo" />
+    <div className='banner' style={bannerStyles}>
+      <h1>Manage your Bar Stock Below:</h1>
+      <br></br>
+    </div>
 		</>
   );
 }

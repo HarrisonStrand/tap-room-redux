@@ -4,8 +4,13 @@ import PropTypes from 'prop-types';
 
 function KegList(props) {
 
-	return (
-		<>
+  const listStyles = {
+    color: '#E4E4E4'
+  }
+
+  return (
+    <>
+    <div className='list' style={listStyles}>
 			{props.kegList.map((keg) => 
 			<Keg
 				whenKegClicked = {props.onKegSelection}
@@ -17,6 +22,7 @@ function KegList(props) {
 				id = {keg.id}
 				key = {keg.id} />
 				)}
+			</div>
 		</>
 	)
 }

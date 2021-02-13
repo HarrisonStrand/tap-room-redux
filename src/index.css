@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('./img/beerbackground.jpeg');
+  background-image: url('./img/backgroundwithlogo.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -14,4 +14,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+input {
+  padding: 10px;
 }
