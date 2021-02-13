@@ -15,7 +15,7 @@ function KegDetail(props) {
 			<h1>Keg Details</h1>
 			<hr />
 			<p>Name: {keg.name}</p>
-			<p>Created by: {keg.brand}</p>
+			<p>Brewery: {keg.brand}</p>
 			<p>${keg.price}</p>
 			<p>ABV: {keg.ABV}%</p>
 			<p>Pints Remaining: {keg.pints}/124</p>

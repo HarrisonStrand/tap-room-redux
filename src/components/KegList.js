@@ -10,6 +10,7 @@ function KegList(props) {
 
   return (
     <>
+		<h2>Keg List:</h2>
     <div className='list' style={listStyles}>
 			{props.kegList.map((keg) => 
 			<Keg

@@ -5,7 +5,7 @@ function Keg(props){
 	return (
 		<>
 			<div onClick = {() => props.whenKegClicked(props.id)}>
-				<p>{props.name}</p>
+				<h3>{props.name}</h3>
 			</div>
 		</>
 	);
