@@ -10,6 +10,12 @@ function ReusableKegForm(props) {
     <>
     <div className='form' style={FormStyles}>
 			<form onSubmit={props.formSubmissionHandler}>
+			<label for="category">Choose a Category:</label>
+          <select name="category">
+            <option value="KEG">KEG</option>
+            <option value="SHIRT">SHIRT</option>
+            <option value="SIXPACK">SIXPACK</option>
+          </select>
 				<input
 					type='text'
 					name='name'
