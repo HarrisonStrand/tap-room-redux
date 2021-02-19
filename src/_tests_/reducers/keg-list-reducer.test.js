@@ -3,6 +3,27 @@ import kegListReducer from '../../reducers/keg-list-reducer';
 describe('kegListReducer', () => {
 
 	let action;
+	const currentState = {
+		1: {
+			name: 'lager',
+			brand: 'Ecliptic Brewery',
+			price: 5,
+			ABV: 6,
+			pints: 100,
+			stock: '',
+			id: 1
+			},
+		2: {
+			name: 'RPM IPA',
+			brand: 'Boneyard Brewery',
+			price: 6,
+			ABV: 7,
+			pints: 100,
+			stock: '',
+			id: 2
+			},
+		};
+
 	const kegData = {
 		name: 'lager',
 		brand: 'Ecliptic Brewery',
@@ -40,6 +61,25 @@ describe('kegListReducer', () => {
 					stock: stock,
 					id: id
 				}
+			});
+		});
+
+		test('Should successfully delete a keg', () => {
+			action = {
+				type: 'DELETE_ITEM',
+				id: 1
+			};
+
+			expect(kegListReducer(currentState, action)).toEqual({
+				2: {
+					name: 'RPM IPA',
+					brand: 'Boneyard Brewery',
+					price: 6,
+					ABV: 7,
+					pints: 100,
+					stock: '',
+					id: 2
+					},
 			});
 		});
 
