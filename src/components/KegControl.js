@@ -13,7 +13,8 @@ class KegControl extends React.Component {
 		super(props);
 		this.state = {
 			selectedKeg: null,
-			editing: false
+			editing: false,
+			filterType: 'KEG'
 		};
 	}
 
@@ -53,6 +54,12 @@ class KegControl extends React.Component {
 			editing: false,
 			selectedKeg: null
 		});
+	}
+
+	handleFilterChange = (type) => {
+		this.setState({
+			filterType: type
+		})
 	}
 
 	handlePurchasingKegPintInList = () => {
@@ -121,6 +128,8 @@ class KegControl extends React.Component {
 				<KegList
 					kegList = {this.props.masterKegList}
 					onKegSelection = {this.handleChangingSelectedKeg}
+					filterVar={this.state.filterType}
+					changeFilterType={this.handleFilterChange}
 					/>
 					buttonText = "Create New Keg";
 		}

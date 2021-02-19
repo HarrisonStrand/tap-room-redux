@@ -13,6 +13,7 @@ function KegDetail(props) {
     <>
     <div className='detail' style={detailStyles}>
 			<h1>Keg Details</h1>
+			<p>Category: {keg.category}</p>
 			<p>Name: {keg.name}</p>
 			<p>Brewery: {keg.brand}</p>
 			<p>${keg.price}</p>

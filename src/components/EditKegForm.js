@@ -9,6 +9,7 @@ function EditKegForm (props) {
 	function handleEditKegFormSubmission(event) {
 		event.preventDefault();
 		props.onEditKeg({
+			category: event.target.category.value,
 			name: event.target.name.value,
 			brand: event.target.brand.value,
 			price: parseInt(event.target.price.value),
