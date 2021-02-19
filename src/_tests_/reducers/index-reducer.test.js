@@ -22,4 +22,19 @@ describe('rootReducer', () => {
 		expect(store.getState().formVisibleOnPage).toEqual(formVisibleReducer(undefined, { type: null }));
 	});
 
+	test('Check that ADD_KEG action works for kegListReducer and rootReducer', () => {
+		const action = {
+			type: 'ADD_KEG',
+			name: 'RPM IPA',
+			brand: 'Boneyard Brewery',
+			price: 6,
+			ABV: 7,
+			pints: 100,
+			stock: '',
+			id: 2
+		}
+		store.dispatch(action);
+		expect(store.getState().masterKegList).toEqual(kegListReducer(undefined, action));
+	});
+
 });
