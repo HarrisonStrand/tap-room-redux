@@ -1,3 +1,4 @@
+import { ADD_KEG, DELETE_KEG } from '../../actions/ActionTypes';
 import kegListReducer from '../../reducers/keg-list-reducer';
 
 describe('kegListReducer', () => {
@@ -41,7 +42,7 @@ describe('kegListReducer', () => {
 		test('Should successfully add a new Keg to masterKegList', () => {
 			const { name, brand, price, ABV, pints, stock, id } = kegData;
 			action = {
-				type: 'ADD_KEG',
+				type: ADD_KEG,
 				name: name,
 				brand: brand,
 				price: price,
@@ -66,7 +67,7 @@ describe('kegListReducer', () => {
 
 		test('Should successfully delete a keg', () => {
 			action = {
-				type: 'DELETE_KEG',
+				type: DELETE_KEG,
 				id: 1
 			};
 
