@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function ReusableKegForm(props) {
+function ReusableItemForm(props) {
   const FormStyles = {
     color: '#E4E4E4'
   }
@@ -51,9 +51,9 @@ function ReusableKegForm(props) {
 	);
 }
 
-ReusableKegForm.propTypes = {
+ReusableItemForm.propTypes = {
 	formSubmissionHandler: PropTypes.func,
 	buttonText: PropTypes.string
 };
 
-export default ReusableKegForm;
+export default ReusableItemForm;

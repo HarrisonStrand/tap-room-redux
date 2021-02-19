@@ -1,10 +1,10 @@
-import { DELETE_KEG, TOGGLE_FORM } from '../../actions/ActionTypes';
+import { DELETE_ITEM, TOGGLE_FORM } from '../../actions/ActionTypes';
 import * as actions from './../../actions';
 
 describe('tap room actions', () => {
-  it('deleteKeg should create DELETE_KEG action', () => {
-    expect(actions.deleteKeg(1)).toEqual({
-      type: DELETE_KEG,
+  it('deleteItem should create DELETE_ITEM action', () => {
+    expect(actions.deleteItem(1)).toEqual({
+      type: DELETE_ITEM,
       id: 1
     });
   });
@@ -15,8 +15,8 @@ describe('tap room actions', () => {
     });
   });
 
-  it('addKeg should create ADD_KEG action', () => {
-    expect(actions.addKeg({
+  it('addKeg should create ADD_ITEM action', () => {
+    expect(actions.addItem({
         category: 'KEG',
         name: 'RPM IPA',
         brand: 'Boneyard Brewery',
@@ -27,7 +27,7 @@ describe('tap room actions', () => {
         id: 2
       })).toEqual({
         category: 'KEG',
-        type: 'ADD_KEG',
+        type: 'ADD_ITEM',
         name: 'RPM IPA',
         brand: 'Boneyard Brewery',
         price: 6,

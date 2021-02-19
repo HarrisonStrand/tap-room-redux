@@ -1,13 +1,13 @@
 import React from "react";
 import { v4 } from 'uuid';
 import PropTypes from "prop-types";
-import ReusableKegForm from './ReusableKegForm';
+import ReusableItemForm from './ReusableItemForm';
 
-function NewKegForm(props) {
+function NewItemForm(props) {
 
-	function handleNewKegFormSubmission(event) {
+	function handleNewItemFormSubmission(event) {
 		event.preventDefault();
-		props.onNewKegCreation({
+		props.onNewItemCreation({
 			category: event.target.category.value,
 			name: event.target.name.value.toUpperCase(),
 			brand: event.target.brand.value,
@@ -25,16 +25,16 @@ function NewKegForm(props) {
   return (
     <>
     <div className='newform' style={newFormStyles}>
-			<ReusableKegForm
-				formSubmissionHandler = {handleNewKegFormSubmission}
-				buttonText = 'Add Keg'/>
+			<ReusableItemForm
+				formSubmissionHandler = {handleNewItemFormSubmission}
+				buttonText = 'Add Item'/>
 		</div>
     </>
   );
 }
 
-NewKegForm.propTypes = {
-	onNewKegCreation: PropTypes.func
+NewItemForm.propTypes = {
+	onNewItemCreation: PropTypes.func
 };
 
-export default NewKegForm;
+export default NewItemForm;

@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from './Banner';
-import Keg from './Keg';
-import KegControl from './KegControl';
+import Item from './Item';
+import ItemControl from './ItemControl';
 
 function App() {
   const appStyles = {
@@ -14,8 +14,8 @@ function App() {
     <>
     <div className='app' style={appStyles}>
     <Banner />
-    <Keg />
-    <KegControl />
+    <Item />
+    <ItemControl />
     </div>
     </>
   );

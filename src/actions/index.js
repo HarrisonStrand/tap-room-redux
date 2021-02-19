@@ -1,16 +1,16 @@
 import * as c from './ActionTypes';
 
-export const deleteKeg = id => ({
-  type: c.DELETE_KEG,
+export const deleteItem = id => ({
+  type: c.DELETE_ITEM,
   id
 });
 export const toggleForm = () => ({
   type: c.TOGGLE_FORM
 });
-export const addKeg = (keg) => {
-  const { category, name, brand, price, ABV, pints, stock, id } = keg;
+export const addItem = (item) => {
+  const { category, name, brand, price, ABV, pints, stock, id } = item;
   return {
-    type: c.ADD_KEG,
+    type: c.ADD_ITEM,
     category,
     name,
     brand,

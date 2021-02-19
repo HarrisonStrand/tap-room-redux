@@ -1,17 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Keg(props){
+function Item(props){
 	return (
 		<>
-			<div onClick = {() => props.whenKegClicked(props.id)}>
+			<div onClick = {() => props.whenItemClicked(props.id)}>
 				<h3>{props.name}</h3>
 			</div>
 		</>
 	);
 }
 
-Keg.propTypes = {
+Item.propTypes = {
 	category: PropTypes.string,
 	name: PropTypes.string,
 	brand: PropTypes.string,
@@ -20,7 +20,7 @@ Keg.propTypes = {
 	pints: PropTypes.number,
 	stock: PropTypes.string,
 	id: PropTypes.string,
-	whenKegClicked: PropTypes.func
+	whenItemClicked: PropTypes.func
 };
 
-export default Keg;
+export default Item;
