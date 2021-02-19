@@ -31,8 +31,9 @@ describe('rootReducer', () => {
 			brand: 'Boneyard Brewery',
 			price: 6,
 			ABV: 7,
-			pints: 100,
+			amount: 100,
 			stock: '',
+			size: '',
 			id: 2
 		}
 		store.dispatch(action);

@@ -22,8 +22,9 @@ describe('tap room actions', () => {
         brand: 'Boneyard Brewery',
         price: 6,
         ABV: 7,
-        pints: 100,
+        amount: 100,
         stock: '',
+        size: '',
         id: 2
       })).toEqual({
         category: 'KEG',
@@ -32,8 +33,9 @@ describe('tap room actions', () => {
         brand: 'Boneyard Brewery',
         price: 6,
         ABV: 7,
-        pints: 100,
+        amount: 100,
         stock: '',
+        size: '',
         id: 2
     });
   });

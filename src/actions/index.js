@@ -8,7 +8,7 @@ export const toggleForm = () => ({
   type: c.TOGGLE_FORM
 });
 export const addItem = (item) => {
-  const { category, name, brand, price, ABV, pints, stock, id } = item;
+  const { category, name, brand, price, ABV, amount, stock, size, id } = item;
   return {
     type: c.ADD_ITEM,
     category,
@@ -16,8 +16,9 @@ export const addItem = (item) => {
     brand,
     price,
     ABV,
-    pints,
+    amount,
     stock,
+    size,
     id
   }
 }

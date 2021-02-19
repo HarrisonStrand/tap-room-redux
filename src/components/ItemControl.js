@@ -62,16 +62,16 @@ class ItemControl extends React.Component {
 		})
 	}
 
-	handlePurchasingItemPintInList = () => {
+	handlePurchasingItemAmountInList = () => {
 		const selectedItem = this.state.selectedItem;
-		if (selectedItem.pints > 11) {
-			const newQuantity = Object.assign({}, selectedItem, {pints: selectedItem.pints - 1});
+		if (selectedItem.amount > 11) {
+			const newQuantity = Object.assign({}, selectedItem, {amount: selectedItem.amount - 1});
 			this.handleEditingItemInList(newQuantity);
 			this.setState({
 				selectedItem: newQuantity
 			});
-		} else if (selectedItem.pints > 0 && selectedItem.pints <= 11) {
-			const newQuantity = Object.assign({}, selectedItem, {pints: selectedItem.pints - 1}, {stock: selectedItem.stock = "Almost Empty!"});
+		} else if (selectedItem.amount > 0 && selectedItem.amount <= 11) {
+			const newQuantity = Object.assign({}, selectedItem, {amount: selectedItem.amount - 1}, {stock: selectedItem.stock = "Almost Empty!"});
 			this.handleEditingItemInList(newQuantity);
 			this.setState({
 				selectedItem: newQuantity
@@ -113,7 +113,7 @@ class ItemControl extends React.Component {
 					item = {this.state.selectedItem}
 					onClickingDelete = {this.handleDeletingItem}
 					onClickingEdit = {this.handleEditClick}
-					onClickingPurchase = {this.handlePurchasingItemPintInList}
+					onClickingPurchase = {this.handlePurchasingItemAmountInList}
 					/>
 					buttonText = "Item List";
 		} else if (this.props.formVisibleOnPage) {

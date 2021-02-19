@@ -13,7 +13,8 @@ function NewItemForm(props) {
 			brand: event.target.brand.value,
 			price: parseInt(event.target.price.value),
 			ABV: parseInt(event.target.ABV.value),
-			pints: parseInt(event.target.pints.value),
+			amount: parseInt(event.target.amount.value),
+			size: event.target.size.value,
 			id: v4()
 		})
 	}

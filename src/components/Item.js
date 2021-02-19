@@ -17,8 +17,9 @@ Item.propTypes = {
 	brand: PropTypes.string,
 	price: PropTypes.number,
 	ABV: PropTypes.number,
-	pints: PropTypes.number,
+	amount: PropTypes.number,
 	stock: PropTypes.string,
+	size: PropTypes.string,
 	id: PropTypes.string,
 	whenItemClicked: PropTypes.func
 };

@@ -22,10 +22,9 @@ function ItemList(props) {
     <>
 			<div className = "itemList">
 			<button className= 'btn btn-info' onClick={() => props.changeFilterType('KEG') }>KEG</button>
-			<button className= 'btn btn-info' onClick={() => props.changeFilterType('SHIRT') }>SHIRT</button>
+			<button className= 'btn btn-info' onClick={() => props.changeFilterType('CLOTHING') }>CLOTHING</button>
 			<button className= 'btn btn-info' onClick={() => props.changeFilterType('SIXPACK') }>SIX PACK</button>
 			<button className= 'btn btn-info' onClick={() => props.changeFilterType('ALL') }>See All Items</button>
-			<hr/>
 		<h2>Item List:</h2>
     <div className='list' style={listStyles}>
 			{Object.values(itemArr).map((item) => 
@@ -36,7 +35,8 @@ function ItemList(props) {
 				brand = {item.brand}
 				price = {item.price}
 				ABV = {item.ABV}
-				pints = {item.pints}
+				amount = {item.amount}
+				size = {item.size}
 				id = {item.id}
 				key = {item.id} />
 				)}

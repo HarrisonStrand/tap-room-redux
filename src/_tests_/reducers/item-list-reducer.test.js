@@ -11,8 +11,9 @@ describe('itemListReducer', () => {
 			brand: 'Ecliptic Brewery',
 			price: 5,
 			ABV: 6,
-			pints: 100,
+			amount: 100,
 			stock: '',
+			size: '',
 			id: 1
 			},
 		2: {
@@ -21,8 +22,9 @@ describe('itemListReducer', () => {
 			brand: 'Boneyard Brewery',
 			price: 6,
 			ABV: 7,
-			pints: 100,
+			amount: 100,
 			stock: '',
+			size: '',
 			id: 2
 			},
 		};
@@ -33,8 +35,9 @@ describe('itemListReducer', () => {
 		brand: 'Ecliptic Brewery',
 		price: 5,
 		ABV: 6,
-		pints: 100,
+		amount: 100,
 		stock: '',
+		size: '',
 		id: 1
 		};
 
@@ -43,7 +46,7 @@ describe('itemListReducer', () => {
 		});
 
 		test('Should successfully add a new Item to masterItemList', () => {
-			const { name, brand, price, ABV, pints, stock, id } = itemData;
+			const { name, brand, price, ABV, amount, stock, id } = itemData;
 			action = {
 				type: ADD_ITEM,
 				category: 'KEG',
@@ -51,8 +54,9 @@ describe('itemListReducer', () => {
 				brand: brand,
 				price: price,
 				ABV: ABV,
-				pints: pints,
+				amount: amount,
 				stock: stock,
+				size: size,
 				id: id,
 			};
 
@@ -63,8 +67,9 @@ describe('itemListReducer', () => {
 					brand: brand,
 					price: price,
 					ABV: ABV,
-					pints: pints,
+					amount: amount,
 					stock: stock,
+					size: size,
 					id: id
 				}
 			});
@@ -83,8 +88,9 @@ describe('itemListReducer', () => {
 					brand: 'Boneyard Brewery',
 					price: 6,
 					ABV: 7,
-					pints: 100,
+					amount: 100,
 					stock: '',
+					size: '',
 					id: 2
 					},
 			});
