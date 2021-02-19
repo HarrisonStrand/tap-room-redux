@@ -13,5 +13,25 @@ describe('tap room actions', () => {
       type: 'TOGGLE_FORM'
     });
   });
-  
+
+  it('addKeg should create ADD_KEG action', () => {
+    expect(actions.addKeg({
+        name: 'RPM IPA',
+        brand: 'Boneyard Brewery',
+        price: 6,
+        ABV: 7,
+        pints: 100,
+        stock: '',
+        id: 2
+      })).toEqual({
+        type: 'ADD_KEG',
+        name: 'RPM IPA',
+        brand: 'Boneyard Brewery',
+        price: 6,
+        ABV: 7,
+        pints: 100,
+        stock: '',
+        id: 2
+    });
+  });
 });
