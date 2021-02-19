@@ -8,6 +8,7 @@ function NewKegForm(props) {
 	function handleNewKegFormSubmission(event) {
 		event.preventDefault();
 		props.onNewKegCreation({
+			category: event.target.category.value,
 			name: event.target.name.value.toUpperCase(),
 			brand: event.target.brand.value,
 			price: parseInt(event.target.price.value),

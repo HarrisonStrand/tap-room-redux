@@ -17,6 +17,7 @@ describe('tap room actions', () => {
 
   it('addKeg should create ADD_KEG action', () => {
     expect(actions.addKeg({
+        category: 'KEG',
         name: 'RPM IPA',
         brand: 'Boneyard Brewery',
         price: 6,
@@ -25,6 +26,7 @@ describe('tap room actions', () => {
         stock: '',
         id: 2
       })).toEqual({
+        category: 'KEG',
         type: 'ADD_KEG',
         name: 'RPM IPA',
         brand: 'Boneyard Brewery',

@@ -8,7 +8,7 @@ function KegList(props) {
     color: '#E4E4E4'
   }
 
-	itemArr = [];
+	let itemArr = [];
 
 	for(const item in props.kegList) {
 		if(props.filterVar === 'ALL') {
@@ -28,7 +28,7 @@ function KegList(props) {
 			<hr/>
 		<h2>Keg List:</h2>
     <div className='list' style={listStyles}>
-			{Object.values(props.kegList).map((keg) => 
+			{Object.values(itemArr).map((keg) => 
 			<Keg
 				whenKegClicked = {props.onKegSelection}
 				category = {keg.category}

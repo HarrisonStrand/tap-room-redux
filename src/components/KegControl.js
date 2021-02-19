@@ -14,7 +14,7 @@ class KegControl extends React.Component {
 		this.state = {
 			selectedKeg: null,
 			editing: false,
-			filterType: 'KEG'
+			filterType: "KEG"
 		};
 	}
 
