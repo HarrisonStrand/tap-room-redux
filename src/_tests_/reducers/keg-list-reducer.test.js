@@ -66,7 +66,7 @@ describe('kegListReducer', () => {
 
 		test('Should successfully delete a keg', () => {
 			action = {
-				type: 'DELETE_ITEM',
+				type: 'DELETE_KEG',
 				id: 1
 			};
 
