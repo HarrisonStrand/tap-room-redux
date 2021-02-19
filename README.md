@@ -1,18 +1,18 @@
 <div align="center">
 
-# Tap Room Project
+# Tap Room Redux Project
 
 </div>
 
 <div align="center">
 <img src="https://github.com/HarrisonStrand.png" width="200px" height="auto" >
 </div>
-<h3 align="center">Tap Room Project, 2-12-2021</h3>
+<h3 align="center">Tap Room Redux Project, 2-19-2021</h3>
 <h4 align="center"> By Harrison Strand</h4>
 
 ## Description
 
-This project was designed as a tap room keg and product manager using React, Javascript, CSS, Bootstrap, with state components and CRUD functionality. Users are able to create, update and manage stock for kegs and tap room merchandise using a one page web application 
+This project was designed as a tap room keg and product manager using React-Redux, Javascript, CSS, Bootstrap, with state components and CRUD functionality. Users are able to create, update and manage stock for kegs and tap room merchandise using a one page web application 
 
 ## User Stories
 
