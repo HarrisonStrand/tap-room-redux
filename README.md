@@ -37,7 +37,7 @@ This project was designed as a tap room keg and product manager using React, Jav
 
 ## State Component Diagram
 
-<img src="./src/img/TapRoomDiagram.jpg"  >
+<img src="./src/img/TapRoomDiagram.png"  >
 
 ## Setup/Installation Requirements
 
@@ -57,7 +57,7 @@ This project was designed as a tap room keg and product manager using React, Jav
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Required Scripts
 
 In the project directory, you can run:
 
@@ -72,6 +72,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+
+## Available Scripts
 
 ### `npm test`
 
