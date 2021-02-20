@@ -17,15 +17,18 @@ function ReusableItemForm(props) {
 					<option value="SIXPACK">SIXPACK</option>
 				</select>
 				<br></br>
+				<br></br>
 				<input
 					type='text'
 					name='name'
 					placeholder='Name'/>
 					<br></br>
+					<br></br>
 				<input
 					type='text'
 					name='brand'
 					placeholder='Brand'/>
+					<br></br>
 					<br></br>
 				<input
 					type='number'
@@ -33,11 +36,6 @@ function ReusableItemForm(props) {
 					name='price'
 					placeholder='Price'/>
 					<br></br>
-				<input
-					type='number'
-					min='0'
-					name='ABV'
-					placeholder='ABV%'/>
 					<br></br>
 				<input
 					type='number'
@@ -45,6 +43,13 @@ function ReusableItemForm(props) {
 					name='amount'
 					placeholder='Amount'/>
 					<br></br>
+					<br></br>
+				<input
+					type='number'
+					min='0'
+					name='ABV'
+					placeholder='ABV%'/>
+					<p>(if applicable)</p>
 				<select name="size">
 					<option value="SIZE">Choose A Size</option>
 					<option value="XS">XS</option>
@@ -54,8 +59,10 @@ function ReusableItemForm(props) {
 					<option value="XL">XL</option>
 					<option value="XXL">XXL</option>
 				</select>
-				<br></br>
+					<p>(if applicable)</p>
 				<button className='btn btn-info'type='submit'>{props.buttonText}</button>
+					<br></br>
+					<br></br>
 			</form>
 		</div>
 		</>

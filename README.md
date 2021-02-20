@@ -37,7 +37,7 @@ This project was designed as a tap room keg and product manager using React-Redu
 
 ## State Component Diagram
 
-<img src="./src/img/TapRoomDiagram.png"  >
+<img src="./src/img/TapRoomDiagram.png" width="500px" height="auto">
 
 ## Setup/Installation Requirements
 
