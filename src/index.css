@@ -16,6 +16,41 @@ code {
     monospace;
 }
 
-input {
+input, select, button {
   padding: 10px;
+  width: 200px;
+}
+
+#reusableform {
+  width: 500px;
+  padding: 20px;
+  height: 365px;
+  text-align: center;
+  border-style: solid;
+  border-color: rgb(2,104,115) ;
+  border-width: 6px;
+  background-color: rgba(255, 254, 254, 0.9) ;
+}
+#banner {
+  width: 500px;
+  padding: 20px;
+  height: 80px;
+  text-align: center;
+  border-style: solid;
+  border-color: rgb(2,104,115) ;
+  border-width: 6px;
+  background-color: rgba(255, 254, 254, 0.9) ;
+}
+
+.itemList button {
+  width: 125px;
+}
+
+#dynamicbutton {
+  text-align: center;
+  margin-left: 150px;
+}
+
+.detail button {
+  width: 165px;
 }

@@ -3,15 +3,15 @@ import React from "react";
 function Banner(){
 
   const bannerStyles = {
-    color: '#E4E4E4',
-    marginLeft: '200px',
-    marginTop: '50px'
+    color: 'black',
+    marginTop: '50px',
+    padding: '10px',
   }
 
   return (
     <>
-    <div className='banner' style={bannerStyles}>
-      <h1>Manage your Bar Stock Below:</h1>
+    <div className='card' id='banner' style={bannerStyles}>
+      <h1>Manage your Bar Stock</h1>
       <br></br>
     </div>
 		</>
