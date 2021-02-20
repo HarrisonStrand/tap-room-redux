@@ -31,6 +31,7 @@ This project was designed as a tap room keg and product manager using React-Redu
 | US08 | "As a user, I want to have kegs prices to be color-coded for easy readability."                                           | True     |
 | US09 | "As a user, I want to see how many pints are left in a keg." | True     |
 | US10 | "As a user, I want to be able to click a button next to a keg whenever I sell a pint of it. This should decrease the number of pints left by 1. Pints should not be able to go below 0."                  | True     |
+| US11 | "As a user, I want to be able to click to view different categories of items."                  | True     |
 
 </details>
 
@@ -48,7 +49,7 @@ This project was designed as a tap room keg and product manager using React-Redu
 
 ##### Open Locally
 
-- Click on the link to my repository: [My Repository]()
+- Click on the link to my repository: [My Repository](https://github.com/HarrisonStrand/tap-room-redux)
 - Click on the green "Code" button and copy the repository URL
 - Open your terminal and use the command `git clone ` into the directory you would like to clone the repository
 - Open in text editor to view code and make changes
@@ -149,6 +150,7 @@ If any errors or bugs occur with installation, please email me, <harrisonstrand@
 - VSCode
 - Node
 - React
+- Redux
 - CSS
 - Javascript
 - npm package installer
