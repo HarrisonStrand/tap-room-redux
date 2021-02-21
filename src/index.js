@@ -10,10 +10,6 @@ import rootReducer from './reducers/index-reducer';
 
 const store = createStore(rootReducer);
 
-store.subscribe(() =>
-  console.log(store.getState()) //delete after finalizing project
-);
-
 ReactDOM.render(
   <Provider store={store}>
     <App />

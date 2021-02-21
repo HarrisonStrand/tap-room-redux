@@ -37,7 +37,7 @@ describe('rootReducer', () => {
 			id: 2
 		}
 		store.dispatch(action);
-		expect(store.getState().masterKegList).toEqual(kegListReducer(undefined, action));
+		expect(store.getState().masterItemList).toEqual(itemListReducer(undefined, action));
 	});
 
 	test('Check that TOGGLE_FORM action works for formVisibleReducer and rootReducer', () => {

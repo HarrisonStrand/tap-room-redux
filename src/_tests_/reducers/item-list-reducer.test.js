@@ -46,10 +46,10 @@ describe('itemListReducer', () => {
 		});
 
 		test('Should successfully add a new Item to masterItemList', () => {
-			const { name, brand, price, ABV, amount, stock, id } = itemData;
+			const { category, name, brand, price, ABV, amount, stock, size, id } = itemData;
 			action = {
 				type: ADD_ITEM,
-				category: 'KEG',
+				category: category,
 				name: name,
 				brand: brand,
 				price: price,
